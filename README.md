@@ -3,6 +3,10 @@ Basic browser install and usage
 
 ### INSTALL
 ```
+cat /etc/group | grep docker # 查看docker用户组
+usermod -aG dockerroot fengchuiguo # 添加用户到docker用户组
+usermod -aG docker fengchuiguo # 添加用户到docker用户组
+
 # 关闭seLinux
 setenforce 0
 修改 /etc/selinux/config 并将 SELINUX=disabled
