@@ -35,7 +35,7 @@ COPY ./packages/ /BASIC/packages/
 #RUN pip install pysam-0.14.1-cp27-cp27mu-manylinux1_x86_64.whl
 #RUN pip install bx-python-0.8.1.tar.gz
 #RUN pip install simplejson-3.13.2.tar.gz
-RUN pip install numpy==1.14.2 pandas==0.22.0 cython==0.28.1 numexpr==2.6.4 pysam==0.14.1 bx-python==0.8.1
+RUN pip install numpy==1.14.2 pandas==0.22.0 cython==0.28.1 numexpr==2.6.4 pysam==0.14.1 python-lzo==1.11 bx-python==0.8.1
 RUN pip install bottleneck==1.2.1 termcolor==1.1.0 decorator==4.2.1 importlib-metadata==1.7.0 zipp==1.2.0 configparser==4.0.2
 
 RUN (cd /BASIC/packages/fb-pytools/ ; python setup.py install)
